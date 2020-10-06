@@ -25,6 +25,7 @@ const Item = mongoose.model("Item", itemsSchema);
 const item1 =
   new Item({
     name: "welcome to your ToDoList"
+    name: "welcome here, guest"
   });
 const item2 =
   new Item({
