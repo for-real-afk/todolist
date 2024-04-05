@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 const app = express();
-
+const uri = "mongodb+srv://deepanshusonwane2023mtech:<password>@cluster0.ufbjqtg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({
@@ -25,7 +25,7 @@ const Item = mongoose.model("Item", itemsSchema);
 const item1 =
   new Item({
     name: "welcome to your ToDoList"
-    name: "welcome here, guest"
+  
   });
 const item2 =
   new Item({
